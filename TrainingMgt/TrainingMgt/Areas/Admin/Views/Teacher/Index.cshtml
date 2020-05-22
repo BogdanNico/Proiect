@@ -1,0 +1,76 @@
+﻿@model IEnumerable<TrainingManagement.Areas.Admin.Models.TeacherViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Teachers list</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.TeacherId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.FullName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Speciality)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </th>
+            <th>
+                Actions
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TeacherId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.FullName)
+            </td>
+            <th>
+                @Html.DisplayFor(modelItem => item.Speciality)
+            </th>
+            <th>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </th>
+            <td>
+                <a asp-area="Admin" asp-controller="Teacher" asp-action="Details" asp-route-id="@item.TeacherId">Details</a>
+                <a asp-area="Admin" asp-controller="Teacher" asp-action="Edit" asp-route-id="@item.TeacherId">Edit</a>
+                <a asp-area="Admin" asp-controller="Teacher" asp-action="Delete" asp-route-id="@item.TeacherId">Delete</a>
+            </td>
+
+        </tr>
+
+        }
+
+    </tbody>
+</table>
+<p>
+
+</p>
+<div>
+    <a asp-area="Admin" asp-controller="Teacher" asp-action="Create">CREATE NEW TEACHER</a>
+</div>
+<p>
+
+</p>
+<div>
+    <a asp-area="Admin" asp-controller="Course" asp-action="Index">Go to the courses list</a>
+</div>
+<p>
+
+</p>
+<div>
+    <a href="/Admin/Default/Index">Back to admin's homepage</a>
+</div>

@@ -1,0 +1,9 @@
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\bin\Debug\netstandard2.0\Training.Services.deps.json
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\bin\Debug\netstandard2.0\Training.Services.dll
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\bin\Debug\netstandard2.0\Training.Services.pdb
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.csprojAssemblyReference.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.csproj.CoreCompileInputs.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.AssemblyInfoInputs.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.AssemblyInfo.cs
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.dll
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Services\obj\Debug\netstandard2.0\Training.Services.pdb

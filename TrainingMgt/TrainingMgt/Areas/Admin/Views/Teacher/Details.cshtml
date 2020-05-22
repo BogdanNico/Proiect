@@ -1,0 +1,43 @@
+﻿@model TrainingManagement.Areas.Admin.Models.TeacherViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Teacher's details</h1>
+
+<h1>@Model.FullName</h1>
+
+<div class="container">
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.TeacherId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.TeacherId)
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.Speciality)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Speciality)
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CourseId)
+        </dd>
+    </dl>
+
+
+</div>
+
+<div>
+    <a href="/Admin/Teacher/Index">Back to teachers list</a>
+</div>

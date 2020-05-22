@@ -1,0 +1,50 @@
+﻿@model TrainingManagement.Areas.Admin.Models.TeacherEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create teacher</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form method="post" enctype="multipart/form-data" asp-area="Admin" asp-controller="Teacher" asp-action="Create">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-field">
+                <input asp-for="TeacherId" type="hidden" class="form-control" />
+
+            </div>
+            <div class="form-field">
+                <label asp-for="FirstName" class="control-label"></label>
+                <input asp-for="FirstName" class="form-control" />
+                <span asp-validation-for="FirstName"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="LastName" class="control-label"></label>
+                <input asp-for="LastName" class="form-control" />
+                <span asp-validation-for="LastName"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="Speciality" class="control-label"></label>
+                <select asp-for="Speciality" asp-items="Html.GetEnumSelectList<Training.Domain.Entities.TeacherSpeciality>()">
+                    <option selected="selected" value="">Select</option>
+                </select>
+                <span asp-validation-for="Speciality"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="CourseId" class="control-label"></label>
+                <input asp-for="CourseId" class="form-control" />
+                <span asp-validation-for="CourseId"></span>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-area="Admin" asp-controller="Teacher" asp-action="Index">Back to List</a>
+</div>

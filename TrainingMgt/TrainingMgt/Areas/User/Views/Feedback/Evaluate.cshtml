@@ -1,0 +1,53 @@
+﻿@using Training.Domain.Entities
+@model TrainingManagement.Areas.User.Models.FeedbackEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Evaluate";
+}
+
+<h1>Evaluate courses</h1>
+
+<div class="container">
+    <div class="col-md-4">
+        <form  method="post" enctype="multipart/form-data" asp-area="User" asp-controller="Feedback" asp-action="Evaluate">
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-field">
+                <input asp-for="FeedbackId" type="hidden" class="form-control" />
+
+            </div>
+            <div class="form-field">
+                <label asp-for="Course"></label>
+                <select asp-for="CourseId" asp-items="ViewBag.CourseId">
+                    <option selected="selected" value="">Select</option>
+                </select>
+                <span asp-validation-for="CourseId"></span>
+            </div>
+         
+            <div class="form-field">
+                <label asp-for="CourseSatisfaction"></label>
+                <select asp-for="CourseSatisfaction" asp-items="Html.GetEnumSelectList<Training.Domain.Entities.CourseSatisfaction>()">
+                    <option selected="selected" value="">Select</option>
+                </select>
+                <span asp-validation-for="CourseSatisfaction"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="LikedAspects"></label>
+                <input asp-for="LikedAspects" />
+                <span asp-validation-for="LikedAspects"></span>
+            </div>
+            <div class="form-field">
+                <label asp-for="AspectsToImprove" ></label>
+                <input asp-for="AspectsToImprove" />
+                <span asp-validation-for="AspectsToImprove"></span>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Evaluate" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-area="User" asp-controller="Feedback" asp-action="Index">Back to List</a>
+</div>

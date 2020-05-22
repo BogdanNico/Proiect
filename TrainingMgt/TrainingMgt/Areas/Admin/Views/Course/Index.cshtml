@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TrainingManagement.Areas.Admin.Models.CourseViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Courses list</h1>
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseType)
+            </th>
+            <th>
+                Actions
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CourseType)
+                </td>
+                <td>
+                    <a asp-area="Admin" asp-controller="Course" asp-action="Details" asp-route-id="@item.CourseId">Details</a>
+                    <a asp-area="Admin" asp-controller="Course" asp-action="Edit" asp-route-id="@item.CourseId">Edit</a>
+                    <a asp-area="Admin" asp-controller="Course" asp-action="Delete" asp-route-id="@item.CourseId">Delete</a>
+                </td>
+
+            </tr>
+
+        }
+
+    </tbody>
+</table>
+<p>
+
+</p>
+<div>
+    <a asp-area="Admin" asp-controller="Course" asp-action="Create">CREATE NEW COURSE</a>
+</div>
+<p>
+
+</p>
+<div>
+    <a asp-area="Admin" asp-controller="Teacher" asp-action="Index">Go to the teachers list</a>
+</div>
+<p>
+
+</p>
+<div>
+    <a href="/Admin/Default/Index">Back to admin's homepage</a>
+</div>

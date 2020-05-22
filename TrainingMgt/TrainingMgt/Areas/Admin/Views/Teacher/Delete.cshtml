@@ -1,0 +1,55 @@
+﻿@model TrainingManagement.Areas.Admin.Models.TeacherEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h1>Delete teachers</h1>
+
+<div class="container">
+    <h3 class="into">Are you sure you want to delete this?</h3>
+    <div class="container">
+        <div>
+            <p class="display-label">
+                @Html.DisplayNameFor(model => model.FirstName)
+            </p>
+            <p class="display-field">
+                @Html.DisplayFor(model => model.FirstName)
+            </p>
+        </div>
+        <br />
+        <div>
+            <p class="display-label">
+                @Html.DisplayNameFor(model => model.LastName)
+            </p>
+            <p class="display-field">
+                @Html.DisplayFor(model => model.LastName)
+            </p>
+        </div>
+        <br />
+        <div>
+            <p class="display-label">
+                @Html.DisplayNameFor(model => model.Speciality)
+            </p>
+            <p class="display-field">
+                @Html.DisplayFor(model => model.Speciality)
+            </p>
+        </div>
+        <br />
+        <div>
+            <p class="display-label">
+                @Html.DisplayNameFor(model => model.CourseId)
+            </p>
+            <p class="display-field">
+                @Html.DisplayFor(model => model.CourseId)
+            </p>
+            <br />
+        </div>
+    </div>
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="TeacherId" />
+        <input type="submit" value="Delete" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

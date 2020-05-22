@@ -1,0 +1,44 @@
+﻿@model TrainingManagement.Areas.Admin.Models.CourseEditModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h1>Create course</h1>
+
+<div class="row">
+    <div class="col-md-4">
+        <form form method="post" enctype="multipart/form-data" asp-area="Admin" asp-controller="Course" asp-action="Create" >
+            <div asp-validation-summary="ModelOnly"></div>
+            <div class="form-group">
+                <input asp-for="CourseId" type="hidden" class="form-control" />
+
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseName" class="control-label"></label>
+                <input asp-for="CourseName" class="form-control" />
+                <span asp-validation-for="CourseName"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="CourseType" class="control-label"></label>
+                <select asp-for="CourseType" asp-items="Html.GetEnumSelectList<Training.Domain.Entities.CourseType>()">
+                    <option selected="selected" value="">Select</option>
+                </select>
+                <span asp-validation-for="CourseType"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TeacherId" class="control-label"></label>
+                <input asp-for="TeacherId" class="form-control" />
+                <span asp-validation-for="TeacherId"></span>
+            </div>
+            <div class="form-field">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-area="Admin" asp-controller="Course" asp-action="Index">Back to List</a>
+</div>

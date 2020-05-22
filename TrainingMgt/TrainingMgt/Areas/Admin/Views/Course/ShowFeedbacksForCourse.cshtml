@@ -1,0 +1,71 @@
+﻿@model IEnumerable<TrainingManagement.Areas.Admin.Models.FeedbacksForCourseViewModel>
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "ShowFeedbacksForCourse";
+}
+
+<h1>All feedbacks by course (simple)</h1>
+
+
+
+
+<table>
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FeedbackId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Course.CourseName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CourseSatisfaction)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LikedAspects)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.AspectsToImprove)
+            </th>
+
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FeedbackId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Course.CourseName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CourseSatisfaction)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LikedAspects)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.AspectsToImprove)
+            </td>
+            
+        </tr>
+
+        }
+
+    </tbody>
+</table>
+<p>
+
+</p>
+<div>
+    <a href="/Admin/Default/Index">Back to admin's homepage</a>
+</div>

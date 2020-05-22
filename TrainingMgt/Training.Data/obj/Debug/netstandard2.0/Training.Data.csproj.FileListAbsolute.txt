@@ -1,0 +1,12 @@
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\bin\Debug\netstandard2.0\Training.Data.deps.json
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\bin\Debug\netstandard2.0\Training.Data.dll
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\bin\Debug\netstandard2.0\Training.Domain.dll
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\bin\Debug\netstandard2.0\Training.Domain.pdb
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.csprojAssemblyReference.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.AssemblyInfoInputs.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.AssemblyInfo.cs
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.csproj.CopyComplete
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\bin\Debug\netstandard2.0\Training.Data.pdb
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.csproj.CoreCompileInputs.cache
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.dll
+D:\01 Scoala informala de IT\02 DOT NET\Proiect final curs\Proiect 5\TrainingMgt\Training.Data\obj\Debug\netstandard2.0\Training.Data.pdb

@@ -1,0 +1,36 @@
+﻿@model TrainingManagement.Areas.Admin.Models.CourseViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Course's details</h1>
+
+<h1>@Model.CourseName</h1>
+
+<div class="container">
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseId)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CourseId)
+        </dd>
+    </dl>
+    <dl>
+        <dt>
+            @Html.DisplayNameFor(model => model.CourseType)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.CourseType)
+        </dd>
+    </dl>
+    
+
+
+</div>
+
+<div>
+    <a href="/Admin/Course/Index">Back to courses list</a>
+</div>

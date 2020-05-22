@@ -1,0 +1,55 @@
+﻿@model TrainingManagement.Areas.User.Models.FeedbackViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details FeedbackViewModel</h1>
+
+<h1>@Model.FeedbackId</h1>
+
+<div class="container">
+    <div>
+        <p class="display-label">
+            @Html.DisplayNameFor(model => model.CourseId)
+        </p>
+        <br />
+        <p class="display-field">
+            @Html.DisplayFor(model => model.CourseId)
+        </p>
+    </div>
+    <div>
+        <p class="display-label">
+            @Html.DisplayNameFor(model => model.CourseName)
+        </p>
+        <p class="display-field">
+            @Html.DisplayFor(model => model.CourseName)
+        </p>
+    </div>
+    <div>
+        <p class="display-label">
+            @Html.DisplayNameFor(model => model.LikedAspects)
+        </p>
+        <p class="display-field">
+            @Html.DisplayFor(model => model.LikedAspects)
+        </p>
+    </div>
+    <div>
+        <p class="display-label">
+            @Html.DisplayNameFor(model => model.AspectsToImprove)
+        </p>
+        <p class="display-field">
+            @Html.DisplayFor(model => model.AspectsToImprove)
+        </p>
+    </div>
+
+
+
+
+
+</div>
+
+<div>
+    <a asp-action="Index">Back to courses list</a>
+
+</div>
